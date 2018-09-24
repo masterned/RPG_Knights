@@ -1,0 +1,27 @@
+{
+  "name": "rpg_knights",
+  "version": "1.0.0",
+  "description": "homebrew rpg system and ui",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/masterned/rpg_knights.git"
+  },
+  "keywords": [
+    "rpg",
+    "game",
+    "app"
+  ],
+  "author": "Spencer Dent",
+  "license": "MPL-2.0",
+  "bugs": {
+    "url": "https://github.com/masterned/rpg_knights/issues"
+  },
+  "homepage": "https://github.com/masterned/rpg_knights#readme",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}
