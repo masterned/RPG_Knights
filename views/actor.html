@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Character Creation</title>
+    <style media="screen">
+      body {
+        background: #333;
+        color: #c0c0c0;
+      }
+      section {
+        padding: 1em;
+      }
+      header {
+        font-size: 1.4em;
+      }
+    </style>
+    <script src="/jQuery" charset="utf-8"></script>
+    <script type="text/javascript">
+      $(function() {
+        let target = $('#target'),
+          i = 0,
+          j = 0;
+        for (i = 0; i < 6; i++) {
+          target.append('<tr></tr>');
+          for (j = 0; j < 3; j++) {
+            target.last().append('<td><input type="text"></td>')
+          }
+        }
+        $('.number').attr({'size': 4});
+      });
+    </script>
+  </head>
+  <body>
+    <article class="">
+      <section>
+        <header>Information:</header>
+        <span class="">Name: <input type="text"></span>
+        <span class="">Race: <input type="text"></span>
+        <span class="">Gender: <input type="text" size="2"></span>
+        <span class="">Origin: <input type="text"></span>
+        <span class="">Alignment: <input type="text" size="3"></span>
+      </section>
+
+      <section>
+        <header>Stats:</header>
+        <section><span class="">Class: <input type="text"></span></section>
+        <section>
+          <span class="">Level: <input type="text" class="number"></span>
+          <span class="">Exp: <input type="text" class="number"></span>
+        </section>
+        <section>
+          <span class="">Body: <input type="text" class="number"></span>
+          <span class="">Mind: <input type="text" class="number"></span>
+          <span class="">Spirit: <input type="text" class="number"></span>
+        </section>
+      </section>
+
+      <section>
+        <header>Attributes:</header>
+        <section style="float: left;">
+          <header>Positive:</header>
+          <table>
+            <tr>
+              <td>Attr:</td>
+              <td>Lvl:</td>
+              <td>Pts:</td>
+            </tr>
+            <tr>
+              <td><input type="text"></td>
+              <td><input type="text" class="number"></td>
+              <td><input type="text" class="number"></td>
+            </tr>
+            <tr>
+              <td><input type="text"></td>
+              <td><input type="text" class="number"></td>
+              <td><input type="text" class="number"></td>
+            </tr>
+            <tr>
+              <td><input type="text"></td>
+              <td><input type="text" class="number"></td>
+              <td><input type="text" class="number"></td>
+            </tr>
+            <tr>
+              <td><input type="text"></td>
+              <td><input type="text" class="number"></td>
+              <td><input type="text" class="number"></td>
+            </tr>
+          </table>
+        </section>
+        <section>
+          <header>Negative:</header>
+          <table>
+            <tr>
+              <td>Attr:</td>
+              <td>Lvl:</td>
+              <td>Pts:</td>
+            </tr>
+            <tr>
+              <td><input type="text"></td>
+              <td><input type="text" class="number"></td>
+              <td><input type="text" class="number"></td>
+            </tr>
+            <tr>
+              <td><input type="text"></td>
+              <td><input type="text" class="number"></td>
+              <td><input type="text" class="number"></td>
+            </tr>
+            <tr>
+              <td><input type="text"></td>
+              <td><input type="text" class="number"></td>
+              <td><input type="text" class="number"></td>
+            </tr>
+            <tr>
+              <td><input type="text"></td>
+              <td><input type="text" class="number"></td>
+              <td><input type="text" class="number"></td>
+            </tr>
+          </table>
+        </section>
+      </section>
+
+      <section>
+        <header>Abilities:</header>
+        <section class="">
+          <span class="">Signature: <input type="text"></span>
+          <span>Desc: <input type="text" size="50"></span>
+        </section>
+        <section class="">
+          <span class="">Race: <input type="text"></span>
+          <span>Desc: <input type="text" size="50"></span>
+        </section>
+        <table>
+          <tr>
+            <td>Name:</td>
+            <td>Desc:</td>
+            <td>Lvl:</td>
+            <td>Pts:</td>
+          </tr>
+          <tr>
+            <td><input type="text"></td>
+            <td><input type="text"></td>
+            <td><input type="text" class="number"></td>
+            <td><input type="text" class="number"></td>
+          </tr>
+          <tr>
+            <td><input type="text"></td>
+            <td><input type="text"></td>
+            <td><input type="text" class="number"></td>
+            <td><input type="text" class="number"></td>
+          </tr>
+          <tr>
+            <td><input type="text"></td>
+            <td><input type="text"></td>
+            <td><input type="text" class="number"></td>
+            <td><input type="text" class="number"></td>
+          </tr>
+          <tr>
+            <td><input type="text"></td>
+            <td><input type="text"></td>
+            <td><input type="text" class="number"></td>
+            <td><input type="text" class="number"></td>
+          </tr>
+        </table>
+      </section>
+
+      <section>
+        <header>Inventory:</header>
+        <table id="target"></table>
+      </section>
+    </article>
+  </body>
+</html>

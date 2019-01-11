@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Dice</title>
+    <script type="text/javascript" src="/jQuery"></script>
+    <script type="text/javascript" src="/util"></script>
+    <script type="text/javascript" src="/kelkubli"></script>
+    <style media="screen">
+      body {
+        background-color: #333;
+        color: #c1c1c1;
+      }
+      div {
+        padding: 0.4em;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      Number of sides: <input id="num_sides" type="number" value="6" min="2">
+    </div>
+    <div>
+      Number of dice: <input id="num_dice" type="number" value="1" min="1">
+    </div>
+    <div>
+      Modifier: <input id="dice_mod" type="number" value="0">
+    </div>
+    <div>
+      <button id="roll_dice" type="button">Roll</button>
+    </div>
+    <div id="dice_results" hidden>
+      rolls:
+      <ul class="" id="dice_rolls"></ul>
+      total:
+      <div class="" id="dice_total"></div>
+    </div>
+  </body>
+</html>
